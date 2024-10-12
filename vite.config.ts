@@ -5,7 +5,7 @@ export default defineConfig({
         jsx: "transform",
         jsxDev: false,
         jsxImportSource: "revik",
-        jsxInject: `import revik, {rvar} from 'revik'`,
+        jsxInject: `import revik from 'revik'`,
         jsxFactory: "revik"
     }
 });

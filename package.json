@@ -10,6 +10,6 @@
         "vite": "^5.4.8"
     },
     "dependencies": {
-        "revik": "^0.0.1"
+        "revik": "^0.0.3"
     }
 }

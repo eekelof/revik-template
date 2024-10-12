@@ -1,23 +1,9 @@
-
+import { rvar } from "revik";
 
 export function App() {
-    const age = rvar(0);
-    const items = rvar([11]);
+    const n = rvar(0);
+    setInterval(() => n.set(n.value + 1), 1000);
 
-    setTimeout(() => {
-        items.set([1, 2, 3]);
-    }, 5000);
-    setTimeout(() => {
-        age.set(10);
-    }, 1000);
-
-    const e = <div>
-        <div>{items}, {age}</div>
-        <div>{age}</div>
-        <div>{age}{age}</div>
-    </div>;
-    console.log(age);
-    return e;
+    return <div>{n}</div>;
 }
-
 document.body.append(<App />)
